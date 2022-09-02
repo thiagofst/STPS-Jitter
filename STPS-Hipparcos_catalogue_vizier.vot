@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VOTABLE version="1.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.ivoa.net/xml/VOTable/v1.3"
+  xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3">
+ <DESCRIPTION>
+   VizieR Astronomical Server vizier.u-strasbg.fr
+    Date: 2022-09-02T12:46:46 [V1.99+ (14-Oct-2013)]
+   Explanations and Statistics of UCDs:			See LINK below
+   In case of problem, please report to:	cds-question@unistra.fr
+   In this version, NULL integer columns are written as an empty string
+   &lt;TD&gt;&lt;/TD&gt;, explicitely possible from VOTable-1.3
+ </DESCRIPTION>
+<!-- VOTable description at http://www.ivoa.net/Documents/latest/VOT.html -->
+<INFO ID="VERSION" name="votable-version" value="1.99+ (14-Oct-2013)"/>
+<INFO ID="Ref" name="-ref" value="VIZ6311f9783c95b4"/>
+<INFO name="-out.form" value="mini"/>
+<INFO ID="MaxTuples" name="-out.max" value="999999"/>
+<INFO name="queryParameters" value="17">
+-oc.form=dec
+-nav=cat:I/239&amp;tab:{I/239/hip_main}&amp;key:source=1239/hip_main&amp;HTTPPRM:&amp;&amp;-ref=VIZ6311f9783c95b4&amp;-oc.form=sexa&amp;-c.r=  2&amp;-c.geom=r&amp;-order=I&amp;-out=HIP&amp;-out=RAhms&amp;-out=DEdms&amp;-out=Vmag&amp;-out=RAICRS&amp;-out=DEICRS&amp;-out=Plx&amp;-out=pmRA&amp;-out=pmDE&amp;-out=e_Plx&amp;-out=B-V&amp;-out=Notes&amp;-ignore=HIPep=*&amp;HIPep=HIPep&amp;Erratum=Erratum&amp;-out=_RA.icrs&amp;-out=_DE.icrs&amp;-file=-c&amp;-meta.ucd=2&amp;-meta=1&amp;-meta.foot=1&amp;-usenav=1&amp;-bmark=POST&amp;-out.max=50&amp;-out.form=HTML Table&amp;-c.eq=J2000&amp;-c.u=arcmin&amp;
+-out.add=_1
+-c.r=  10
+-c.geom=r
+-source=I/239/hip_main
+-order=I
+-out=HIP
+-out=RAhms
+-out=DEdms
+-out=Vmag
+-out=B-V
+-out=e_B-V
+-out=SpType
+-out.max=999999
+-c.eq=J2000
+-c.u=arcsec
+</INFO>
+
+
+<!-- INFO queryParameters: #2
+-oc.form=dec
+-nav=cat:I/239&amp;tab:{I/239/hip_main}&amp;key:source=1239/hip_main&amp;HTTPPRM:&amp;&amp;-ref=VIZ6311f9783c95b4&amp;-oc.form=sexa&amp;-c.r=  2&amp;-c.geom=r&amp;-order=I&amp;-out=HIP&amp;-out=RAhms&amp;-out=DEdms&amp;-out=Vmag&amp;-out=RAICRS&amp;-out=DEICRS&amp;-out=Plx&amp;-out=pmRA&amp;-out=pmDE&amp;-out=e_Plx&amp;-out=B-V&amp;-out=Notes&amp;-ignore=HIPep=*&amp;HIPep=HIPep&amp;Erratum=Erratum&amp;-out=_RA.icrs&amp;-out=_DE.icrs&amp;-file=-c&amp;-meta.ucd=2&amp;-meta=1&amp;-meta.foot=1&amp;-usenav=1&amp;-bmark=POST&amp;-out.max=50&amp;-out.form=HTML Table&amp;-c.eq=J2000&amp;-c.u=arcmin&amp;
+-out.add=_1
+-c.r=  10
+-c.geom=r
+-source=I/239/hip_main
+-order=I
+-out=HIP
+-out=RAhms
+-out=DEdms
+-out=Vmag
+-out=B-V
+-out=e_B-V
+-out=SpType
+-out.max=999999
+-c.eq=J2000
+-c.u=arcsec
+-c=HIP10175
+ -->
+
+<RESOURCE ID="yCat_1239" name="I/239">
+  <DESCRIPTION>The Hipparcos and Tycho Catalogues (ESA 1997)</DESCRIPTION>
+  <COOSYS ID="H_1991.250" system="ICRS" epoch="1991.250"/>
+  <TABLE ID="I_239_hip_main" name="I/239/hip_main">
+    <DESCRIPTION>The Hipparcos Main Catalogue</DESCRIPTION>
+<!-- The Hipparcos Main Catalogue\vizContent{timeSerie} -->
+
+    <!-- RowName: ${HIP} -->
+    <!-- Definitions of GROUPs and FIELDs -->
+    <FIELD name="_1" ucd="meta.id" datatype="char" arraysize="40"><!-- ucd="ID_TARGET" -->
+      <DESCRIPTION>The original question (from your input file)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="HIP" ucd="meta.id;meta.main" datatype="int" width="6"><!-- ucd="ID_MAIN" -->
+      <DESCRIPTION>Identifier (HIP number) (H1)</DESCRIPTION>
+      <LINK href="http://vizier.u-strasbg.fr/viz-bin/VizieR-5?-info=XML&amp;-out.add=.&amp;-source=I/239/hip_main&amp;recno=${recno}"/>
+    </FIELD>
+    <FIELD name="RAhms" ucd="pos.eq.ra" datatype="char" arraysize="11"><!-- ucd="POS_EQ_RA_OTHER" -->
+      <DESCRIPTION>Right ascension in h m s, ICRS (J1991.25) (H3)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="DEdms" ucd="pos.eq.dec" datatype="char" arraysize="11"><!-- ucd="POS_EQ_DEC_OTHER" -->
+      <DESCRIPTION>Declination in deg ' ", ICRS (J1991.25) (H4)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Vmag" ucd="phot.mag;em.opt.V" datatype="float" width="5" precision="2" unit="mag"><!-- ucd="PHOT_JHN_V" -->
+      <DESCRIPTION>? Magnitude in Johnson V (H5)</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="B-V" ucd="phot.color;em.opt.B;em.opt.V" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="PHOT_JHN_B-V" -->
+      <DESCRIPTION>? Johnson B-V colour (H37)</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="e_B-V" ucd="stat.error;phot.color;em.opt.B" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="ERROR" -->
+      <DESCRIPTION>? Standard error on B-V (H38)</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="SpType" ucd="src.spType" datatype="char" arraysize="12*"><!-- ucd="SPECT_TYPE_MK" -->
+      <DESCRIPTION>Spectral type (H76)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="recno" ucd="meta.record" datatype="int" width="8" type="hidden"><!-- ucd="RECORD" -->
+      <DESCRIPTION>Record number assigned by the VizieR team. Should Not be used for identification.</DESCRIPTION>
+      <LINK href="http://vizier.u-strasbg.fr/viz-bin/VizieR-5?-info=XML&amp;-out.add=.&amp;-source=I/239/hip_main&amp;recno=${recno}"/>
+    </FIELD>
+<DATA><TABLEDATA>
+<TR><TD>HIP10175</TD><TD>10175</TD><TD>02 10 52.01</TD><TD>+13 41 00.4</TD><TD>7.63</TD><TD>0.704</TD><TD>0.018</TD><TD>G5+...</TD><TD>10167</TD></TR>
+
+<TR><TD>HIP101905</TD><TD>101905</TD><TD>20 39 02.65</TD><TD>-49 19 53.3</TD><TD>7.33</TD><TD>0.626</TD><TD>0.002</TD><TD>G3V</TD><TD>101813</TD></TR>
+
+<TR><TD>HIP102040</TD><TD>102040</TD><TD>20 40 45.07</TD><TD>+19 56 05.2</TD><TD>6.43</TD><TD>0.611</TD><TD>0.009</TD><TD>G5V</TD><TD>101947</TD></TR>
+
+<TR><TD>HIP102152</TD><TD>102152</TD><TD>20 41 54.52</TD><TD>-27 12 57.3</TD><TD>9.18</TD><TD>0.651</TD><TD>0.030</TD><TD>G3V</TD><TD>102058</TD></TR>
+
+<TR><TD>HIP10303</TD><TD>10303</TD><TD>02 12 46.43</TD><TD>-02 23 46.2</TD><TD>7.56</TD><TD>0.716</TD><TD>0.016</TD><TD>G4</TD><TD>10295</TD></TR>
+
+<TR><TD>HIP103983</TD><TD>103983</TD><TD>21 04 05.74</TD><TD>+03 58 51.8</TD><TD>8.39</TD><TD>0.650</TD><TD>0.015</TD><TD>G5</TD><TD>103889</TD></TR>
+
+<TR><TD>HIP104045</TD><TD>104045</TD><TD>21 04 44.23</TD><TD>-04 49 42.3</TD><TD>8.34</TD><TD>0.639</TD><TD>0.004</TD><TD>G5</TD><TD>103951</TD></TR>
+
+<TR><TD>HIP105184</TD><TD>105184</TD><TD>21 18 27.08</TD><TD>-43 20 04.9</TD><TD>6.75</TD><TD>0.637</TD><TD>0.001</TD><TD>G5V</TD><TD>105090</TD></TR>
+
+<TR><TD>HIP108158</TD><TD>108158</TD><TD>21 54 45.60</TD><TD>-73 26 14.7</TD><TD>7.43</TD><TD>0.696</TD><TD>0.005</TD><TD>G5IV/V</TD><TD>108064</TD></TR>
+
+<TR><TD>HIP108468</TD><TD>108468</TD><TD>21 58 24.31</TD><TD>-12 39 53.3</TD><TD>7.16</TD><TD>0.640</TD><TD>0.009</TD><TD>G5/G6V</TD><TD>108372</TD></TR>
+
+<TR><TD>HIP109110</TD><TD>109110</TD><TD>22 06 05.24</TD><TD>-05 21 28.5</TD><TD>7.57</TD><TD>0.674</TD><TD>0.015</TD><TD>G0</TD><TD>109015</TD></TR>
+
+<TR><TD>HIP109821</TD><TD>109821</TD><TD>22 14 38.21</TD><TD>-41 22 47.1</TD><TD>6.23</TD><TD>0.648</TD><TD>0.006</TD><TD>G5V</TD><TD>109726</TD></TR>
+
+<TR><TD>HIP114328</TD><TD>114328</TD><TD>23 09 16.53</TD><TD>-40 59 28.3</TD><TD>8.73</TD><TD>0.676</TD><TD>0.018</TD><TD>G3V</TD><TD>114227</TD></TR>
+
+<TR><TD>HIP114615</TD><TD>114615</TD><TD>23 13 09.81</TD><TD>-30 26 59.2</TD><TD>9.60</TD><TD>0.656</TD><TD>0.038</TD><TD>G3V</TD><TD>114514</TD></TR>
+
+<TR><TD>HIP115577</TD><TD>115577</TD><TD>23 24 42.13</TD><TD>-52 42 05.4</TD><TD>7.59</TD><TD>0.692</TD><TD>0.001</TD><TD>G5V</TD><TD>115475</TD></TR>
+
+<TR><TD>HIP116906</TD><TD>116906</TD><TD>23 41 51.62</TD><TD>-05 59 07.8</TD><TD>7.68</TD><TD>0.648</TD><TD>0.002</TD><TD>G5</TD><TD>116803</TD></TR>
+
+<TR><TD>HIP117367</TD><TD>117367</TD><TD>23 47 52.20</TD><TD>+04 10 32.0</TD><TD>7.69</TD><TD>0.627</TD><TD>0.007</TD><TD>G2V</TD><TD>117263</TD></TR>
+
+<TR><TD>HIP118115</TD><TD>118115</TD><TD>23 57 33.25</TD><TD>-09 38 49.8</TD><TD>7.89</TD><TD>0.643</TD><TD>0.002</TD><TD>G2V</TD><TD>118011</TD></TR>
+
+<TR><TD>HIP11915</TD><TD>11915</TD><TD>02 33 48.89</TD><TD>-19 36 42.8</TD><TD>8.61</TD><TD>0.646</TD><TD>0.003</TD><TD>G5V</TD><TD>11906</TD></TR>
+
+<TR><TD>HIP14501</TD><TD>14501</TD><TD>03 07 18.58</TD><TD>-13 45 40.1</TD><TD>6.97</TD><TD>0.645</TD><TD>0.010</TD><TD>G3V</TD><TD>14489</TD></TR>
+
+<TR><TD>HIP14614</TD><TD>14614</TD><TD>03 08 44.26</TD><TD>+15 20 07.1</TD><TD>7.85</TD><TD>0.642</TD><TD>0.015</TD><TD>G8V</TD><TD>14602</TD></TR>
+
+<TR><TD>HIP15527</TD><TD>15527</TD><TD>03 20 03.35</TD><TD>-28 51 14.1</TD><TD>7.36</TD><TD>0.630</TD><TD>0.006</TD><TD>G3V</TD><TD>15513</TD></TR>
+
+<TR><TD>HIP18844</TD><TD>18844</TD><TD>04 02 26.56</TD><TD>-61 21 25.9</TD><TD>6.74</TD><TD>0.667</TD><TD>0.002</TD><TD>G5IV-V</TD><TD>18828</TD></TR>
+
+<TR><TD>HIP1954</TD><TD>1954</TD><TD>00 24 42.34</TD><TD>-53 59 02.1</TD><TD>7.27</TD><TD>0.681</TD><TD>0.007</TD><TD>G8IV+...</TD><TD>1952</TD></TR>
+
+<TR><TD>HIP19911</TD><TD>19911</TD><TD>04 16 16.55</TD><TD>+07 09 34.5</TD><TD>7.50</TD><TD>0.661</TD><TD>0.015</TD><TD>G0</TD><TD>19894</TD></TR>
+
+<TR><TD>HIP22263</TD><TD>22263</TD><TD>04 47 36.21</TD><TD>-16 56 05.5</TD><TD>5.49</TD><TD>0.632</TD><TD>0.006</TD><TD>G3V</TD><TD>22245</TD></TR>
+
+<TR><TD>HIP25670</TD><TD>25670</TD><TD>05 28 59.18</TD><TD>-17 25 44.6</TD><TD>8.27</TD><TD>0.657</TD><TD>0.015</TD><TD>G5V</TD><TD>25652</TD></TR>
+
+<TR><TD>HIP28066</TD><TD>28066</TD><TD>05 56 03.21</TD><TD>+13 55 33.9</TD><TD>6.60</TD><TD>0.650</TD><TD>0.010</TD><TD>G5IV</TD><TD>28048</TD></TR>
+
+<TR><TD>HIP29432</TD><TD>29432</TD><TD>06 12 00.45</TD><TD>+06 47 01.3</TD><TD>6.85</TD><TD>0.642</TD><TD>0.007</TD><TD>G4V</TD><TD>29411</TD></TR>
+
+<TR><TD>HIP29525</TD><TD>29525</TD><TD>06 13 12.46</TD><TD>+10 37 40.3</TD><TD>6.43</TD><TD>0.663</TD><TD>0.005</TD><TD>G8V</TD><TD>29504</TD></TR>
+
+<TR><TD>HIP30037</TD><TD>30037</TD><TD>06 19 15.00</TD><TD>-68 49 53.7</TD><TD>9.16</TD><TD>0.655</TD><TD>0.023</TD><TD>G5V</TD><TD>30016</TD></TR>
+
+<TR><TD>HIP30158</TD><TD>30158</TD><TD>06 20 46.68</TD><TD>-44 47 21.7</TD><TD>8.37</TD><TD>0.746</TD><TD>0.020</TD><TD>G5</TD><TD>30137</TD></TR>
+
+<TR><TD>HIP30476</TD><TD>30476</TD><TD>06 24 24.41</TD><TD>-42 50 57.9</TD><TD>6.67</TD><TD>0.673</TD><TD>0.004</TD><TD>G5V</TD><TD>30455</TD></TR>
+
+<TR><TD>HIP30502</TD><TD>30502</TD><TD>06 24 43.76</TD><TD>-43 24 21.2</TD><TD>8.66</TD><TD>0.661</TD><TD>0.016</TD><TD>G5V</TD><TD>30481</TD></TR>
+
+<TR><TD>HIP3203</TD><TD>3203</TD><TD>00 40 47.48</TD><TD>-07 13 56.6</TD><TD>7.02</TD><TD>0.620</TD><TD>0.015</TD><TD>G0...</TD><TD>3201</TD></TR>
+
+<TR><TD>HIP33094</TD><TD>33094</TD><TD>06 53 33.76</TD><TD>-28 32 19.4</TD><TD>6.05</TD><TD>0.708</TD><TD>0.005</TD><TD>G3/G5V</TD><TD>33070</TD></TR>
+
+<TR><TD>HIP34511</TD><TD>34511</TD><TD>07 09 05.05</TD><TD>+15 25 20.2</TD><TD>8.00</TD><TD>0.631</TD><TD>0.011</TD><TD>G0</TD><TD>34485</TD></TR>
+
+<TR><TD>HIP36512</TD><TD>36512</TD><TD>07 30 39.98</TD><TD>-15 59 39.6</TD><TD>7.73</TD><TD>0.637</TD><TD>0.011</TD><TD>G5V</TD><TD>36482</TD></TR>
+
+<TR><TD>HIP36515</TD><TD>36515</TD><TD>07 30 42.58</TD><TD>-37 20 22.2</TD><TD>6.66</TD><TD>0.641</TD><TD>0.006</TD><TD>G3V</TD><TD>36484</TD></TR>
+
+<TR><TD>HIP38072</TD><TD>38072</TD><TD>07 48 06.02</TD><TD>-27 31 11.0</TD><TD>9.20</TD><TD>0.628</TD><TD>0.017</TD><TD>G2V</TD><TD>38041</TD></TR>
+
+<TR><TD>HIP40133</TD><TD>40133</TD><TD>08 11 49.21</TD><TD>+16 31 28.2</TD><TD>7.34</TD><TD>0.667</TD><TD>0.007</TD><TD>G0</TD><TD>40102</TD></TR>
+
+<TR><TD>HIP41317</TD><TD>41317</TD><TD>08 25 49.42</TD><TD>-29 55 47.6</TD><TD>7.81</TD><TD>0.643</TD><TD>0.027</TD><TD>G5V</TD><TD>41285</TD></TR>
+
+<TR><TD>HIP42333</TD><TD>42333</TD><TD>08 37 50.47</TD><TD>-06 48 25.2</TD><TD>6.74</TD><TD>0.655</TD><TD>0.005</TD><TD>G0</TD><TD>42301</TD></TR>
+
+<TR><TD>HIP43297</TD><TD>43297</TD><TD>08 49 12.62</TD><TD>+03 29 04.6</TD><TD>7.45</TD><TD>0.689</TD><TD>0.010</TD><TD>G0</TD><TD>43264</TD></TR>
+
+<TR><TD>HIP44713</TD><TD>44713</TD><TD>09 06 38.79</TD><TD>-43 29 32.7</TD><TD>7.31</TD><TD>0.664</TD><TD>0.004</TD><TD>G5V</TD><TD>44680</TD></TR>
+
+<TR><TD>HIP44935</TD><TD>44935</TD><TD>09 09 10.26</TD><TD>+10 49 19.5</TD><TD>8.72</TD><TD>0.664</TD><TD>0.022</TD><TD>G5</TD><TD>44902</TD></TR>
+
+<TR><TD>HIP44997</TD><TD>44997</TD><TD>09 09 53.97</TD><TD>+14 27 24.1</TD><TD>8.34</TD><TD>0.665</TD><TD>0.013</TD><TD>G5</TD><TD>44964</TD></TR>
+
+<TR><TD>HIP4909</TD><TD>4909</TD><TD>01 02 57.42</TD><TD>-09 51 40.6</TD><TD>8.52</TD><TD>0.649</TD><TD>0.024</TD><TD>G0</TD><TD>4906</TD></TR>
+
+<TR><TD>HIP49756</TD><TD>49756</TD><TD>10 09 23.55</TD><TD>+02 22 16.0</TD><TD>7.55</TD><TD>0.647</TD><TD>0.003</TD><TD>G0</TD><TD>49719</TD></TR>
+
+<TR><TD>HIP5301</TD><TD>5301</TD><TD>01 07 48.55</TD><TD>-08 14 01.5</TD><TD>8.45</TD><TD>0.662</TD><TD>0.009</TD><TD>G0</TD><TD>5297</TD></TR>
+
+<TR><TD>HIP54102</TD><TD>54102</TD><TD>11 04 13.61</TD><TD>-57 45 54.1</TD><TD>8.65</TD><TD>0.659</TD><TD>0.018</TD><TD>G3V</TD><TD>54061</TD></TR>
+
+<TR><TD>HIP54287</TD><TD>54287</TD><TD>11 06 19.67</TD><TD>-44 22 23.2</TD><TD>7.23</TD><TD>0.680</TD><TD>0.002</TD><TD>G5V</TD><TD>54246</TD></TR>
+
+<TR><TD>HIP54582</TD><TD>54582</TD><TD>11 10 13.49</TD><TD>-07 23 20.3</TD><TD>6.81</TD><TD>0.613</TD><TD>0.002</TD><TD>G0</TD><TD>54541</TD></TR>
+
+<TR><TD>HIP55409</TD><TD>55409</TD><TD>11 20 51.90</TD><TD>-23 13 00.9</TD><TD>8.00</TD><TD>0.658</TD><TD>0.003</TD><TD>G3/G5V</TD><TD>55368</TD></TR>
+
+<TR><TD>HIP62039</TD><TD>62039</TD><TD>12 42 59.45</TD><TD>-04 02 56.0</TD><TD>7.83</TD><TD>0.675</TD><TD>0.004</TD><TD>G0</TD><TD>61986</TD></TR>
+
+<TR><TD>HIP6407</TD><TD>6407</TD><TD>01 22 18.70</TD><TD>+03 30 48.6</TD><TD>8.61</TD><TD>0.638</TD><TD>0.015</TD><TD>G5</TD><TD>6402</TD></TR>
+
+<TR><TD>HIP64150</TD><TD>64150</TD><TD>13 08 50.97</TD><TD>+05 12 31.9</TD><TD>6.78</TD><TD>0.667</TD><TD>0.006</TD><TD>G5IV</TD><TD>64095</TD></TR>
+
+<TR><TD>HIP64673</TD><TD>64673</TD><TD>13 15 20.75</TD><TD>-55 20 28.5</TD><TD>8.33</TD><TD>0.630</TD><TD>0.012</TD><TD>G2/G3V</TD><TD>64616</TD></TR>
+
+<TR><TD>HIP64713</TD><TD>64713</TD><TD>13 15 47.46</TD><TD>-29 30 20.5</TD><TD>9.26</TD><TD>0.664</TD><TD>0.029</TD><TD>G3V</TD><TD>64657</TD></TR>
+
+<TR><TD>HIP65708</TD><TD>65708</TD><TD>13 28 18.58</TD><TD>-00 50 21.1</TD><TD>7.44</TD><TD>0.651</TD><TD>0.011</TD><TD>G5</TD><TD>65651</TD></TR>
+
+<TR><TD>HIP67620</TD><TD>67620</TD><TD>13 51 20.70</TD><TD>-24 23 23.2</TD><TD>6.43</TD><TD>0.703</TD><TD>0.005</TD><TD>G5V</TD><TD>67561</TD></TR>
+
+<TR><TD>HIP68468</TD><TD>68468</TD><TD>14 01 03.69</TD><TD>-32 45 24.0</TD><TD>9.39</TD><TD>0.654</TD><TD>0.031</TD><TD>G3V</TD><TD>68407</TD></TR>
+
+<TR><TD>HIP69645</TD><TD>69645</TD><TD>14 15 15.19</TD><TD>-42 48 17.1</TD><TD>9.41</TD><TD>0.665</TD><TD>0.004</TD><TD>G8V+...</TD><TD>69582</TD></TR>
+
+<TR><TD>HIP72043</TD><TD>72043</TD><TD>14 44 11.74</TD><TD>+18 27 44.9</TD><TD>7.52</TD><TD>0.636</TD><TD>0.010</TD><TD>G5V</TD><TD>71980</TD></TR>
+
+<TR><TD>HIP73241</TD><TD>73241</TD><TD>14 58 08.81</TD><TD>-48 51 43.9</TD><TD>6.34</TD><TD>0.708</TD><TD>0.002</TD><TD>G5V</TD><TD>73179</TD></TR>
+
+<TR><TD>HIP73815</TD><TD>73815</TD><TD>15 05 13.25</TD><TD>+06 17 25.8</TD><TD>8.18</TD><TD>0.656</TD><TD>0.005</TD><TD>G0</TD><TD>73753</TD></TR>
+
+<TR><TD>HIP74389</TD><TD>74389</TD><TD>15 12 10.29</TD><TD>-30 53 09.7</TD><TD>7.76</TD><TD>0.662</TD><TD>0.012</TD><TD>G2V</TD><TD>74327</TD></TR>
+
+<TR><TD>HIP74432</TD><TD>74432</TD><TD>15 12 43.85</TD><TD>+19 17 07.2</TD><TD>6.69</TD><TD>0.680</TD><TD>0.000</TD><TD>G5V</TD><TD>74371</TD></TR>
+
+<TR><TD>HIP7585</TD><TD>7585</TD><TD>01 37 40.81</TD><TD>+12 04 42.1</TD><TD>6.77</TD><TD>0.648</TD><TD>0.008</TD><TD>G5V</TD><TD>7580</TD></TR>
+
+<TR><TD>HIP76114</TD><TD>76114</TD><TD>15 32 43.66</TD><TD>+10 58 04.5</TD><TD>7.22</TD><TD>0.656</TD><TD>0.007</TD><TD>G5IV-V</TD><TD>76051</TD></TR>
+
+<TR><TD>HIP77052</TD><TD>77052</TD><TD>15 44 01.85</TD><TD>+02 30 55.9</TD><TD>5.86</TD><TD>0.684</TD><TD>0.002</TD><TD>G5V</TD><TD>76988</TD></TR>
+
+<TR><TD>HIP77883</TD><TD>77883</TD><TD>15 54 19.85</TD><TD>-08 34 49.2</TD><TD>8.72</TD><TD>0.672</TD><TD>0.024</TD><TD>G0</TD><TD>77819</TD></TR>
+
+<TR><TD>HIP79578</TD><TD>79578</TD><TD>16 14 11.99</TD><TD>-31 39 46.9</TD><TD>6.55</TD><TD>0.646</TD><TD>0.006</TD><TD>G1V</TD><TD>79513</TD></TR>
+
+<TR><TD>HIP79672</TD><TD>79672</TD><TD>16 15 37.13</TD><TD>-08 22 05.7</TD><TD>5.49</TD><TD>0.652</TD><TD>0.009</TD><TD>G1V</TD><TD>79607</TD></TR>
+
+<TR><TD>HIP79715</TD><TD>79715</TD><TD>16 16 06.53</TD><TD>-52 48 52.3</TD><TD>8.35</TD><TD>0.653</TD><TD>0.019</TD><TD>G2III</TD><TD>79650</TD></TR>
+
+<TR><TD>HIP81746</TD><TD>81746</TD><TD>16 41 49.74</TD><TD>-45 22 06.6</TD><TD>7.03</TD><TD>0.653</TD><TD>0.000</TD><TD>G3V</TD><TD>81680</TD></TR>
+
+<TR><TD>HIP83276</TD><TD>83276</TD><TD>17 01 10.77</TD><TD>-13 33 58.8</TD><TD>7.12</TD><TD>0.608</TD><TD>0.004</TD><TD>G2V</TD><TD>83208</TD></TR>
+
+<TR><TD>HIP85042</TD><TD>85042</TD><TD>17 22 51.26</TD><TD>-02 23 16.5</TD><TD>6.28</TD><TD>0.680</TD><TD>0.001</TD><TD>G5IV</TD><TD>84971</TD></TR>
+
+<TR><TD>HIP8507</TD><TD>8507</TD><TD>01 49 42.90</TD><TD>-18 56 10.0</TD><TD>8.89</TD><TD>0.658</TD><TD>0.018</TD><TD>G5V</TD><TD>8502</TD></TR>
+
+<TR><TD>HIP87769</TD><TD>87769</TD><TD>17 55 45.34</TD><TD>+11 48 14.4</TD><TD>8.43</TD><TD>0.685</TD><TD>0.014</TD><TD>G5</TD><TD>87692</TD></TR>
+
+<TR><TD>HIP89650</TD><TD>89650</TD><TD>18 17 44.03</TD><TD>-61 42 30.3</TD><TD>8.93</TD><TD>0.667</TD><TD>0.022</TD><TD>G3V</TD><TD>89571</TD></TR>
+
+<TR><TD>HIP9349</TD><TD>9349</TD><TD>02 00 05.31</TD><TD>-13 32 45.8</TD><TD>7.99</TD><TD>0.660</TD><TD>0.009</TD><TD>G5V</TD><TD>9343</TD></TR>
+
+<TR><TD>HIP95962</TD><TD>95962</TD><TD>19 30 52.80</TD><TD>-06 30 50.7</TD><TD>7.27</TD><TD>0.640</TD><TD>0.015</TD><TD>G0</TD><TD>95877</TD></TR>
+
+<TR><TD>HIP96160</TD><TD>96160</TD><TD>19 33 08.49</TD><TD>-54 31 55.8</TD><TD>8.67</TD><TD>0.653</TD><TD>0.016</TD><TD>G5V</TD><TD>96075</TD></TR>
+</TABLEDATA></DATA>
+</TABLE>
+</RESOURCE>
+
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+</VOTABLE>
