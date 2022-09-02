@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VOTABLE version="1.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.ivoa.net/xml/VOTable/v1.3"
+  xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3">
+ <DESCRIPTION>
+   VizieR Astronomical Server vizier.cds.unistra.fr
+    Date: 2022-09-02T14:43:17 [V1.99+ (14-Oct-2013)]
+   Explanations and Statistics of UCDs:			See LINK below
+   In case of problem, please report to:	cds-question@unistra.fr
+   In this version, NULL integer columns are written as an empty string
+   &lt;TD&gt;&lt;/TD&gt;, explicitely possible from VOTable-1.3
+ </DESCRIPTION>
+<!-- VOTable description at http://www.ivoa.net/Documents/latest/VOT.html -->
+<INFO ID="VERSION" name="votable-version" value="1.99+ (14-Oct-2013)"/>
+<INFO ID="Ref" name="-ref" value="VIZ6311fcc03eca66"/>
+<INFO name="-out.form" value="mini"/>
+<INFO ID="MaxTuples" name="-out.max" value="unlimited"/>
+<INFO name="queryParameters" value="37">
+-oc.form=dec
+-nav=cat:J/A+A/646/A77&amp;tab:{J/A+A/646/A77/catalog}&amp;key:source=J/A+A/646/A77&amp;HTTPPRM:&amp;&amp;-ref=VIZ6311fcc03eca66&amp;-oc.form=sexa&amp;-c.r=  2&amp;-c.geom=r&amp;-order=I&amp;-out=Star&amp;-out=Nobs&amp;-out=Nnights&amp;-out=Tspan&amp;-out=snr-med&amp;-out=DateStart&amp;-out=Vmag&amp;-out=B-V&amp;-out=plx&amp;-out=d&amp;-out=Nplt&amp;-out=SpType&amp;-out=Teff&amp;-out=logg&amp;-out=[Fe/H]&amp;-out=Mass&amp;-out=Radius&amp;-out=Age&amp;-out=SMWmed&amp;-out=logRHKmed&amp;-out=R5med&amp;-out=Simbad&amp;-ignore=Simbad=*&amp;Simbad=Simbad&amp;-out=_RA&amp;-out=_DE&amp;-file=-c&amp;-meta.ucd=2&amp;-meta=1&amp;-meta.foot=1&amp;-usenav=1&amp;-bmark=POST&amp;-out.max=50&amp;-out.form=HTML Table&amp;-c.eq=J2000&amp;-c.u=arcmin&amp;
+-out.add=_1
+-c.r=1
+-c.geom=r
+-source=J/A+A/646/A77/catalog
+-order=I
+-out=Star
+-out=Vmag
+-out=e_Vmag
+-out=B-V
+-out=e_B-V
+-out=plx
+-out=d
+-out=Nplt
+-out=SpType
+-out=Teff
+-out=e_Teff
+-out=logg
+-out=e_logg
+-out=[Fe/H]
+-out=e_[Fe/H]
+-out=Mass
+-out=e_Mass
+-out=Radius
+-out=e_Radius
+-out=Age
+-out=e_Age
+-out=SMWmed
+-out=e_SMW
+-out=logRHKmed
+-out=e_logRHK
+-out=_RA
+-out=_DE
+-out.max=unlimited
+-c.eq=J2000
+-c.u=arcmin
+</INFO>
+
+
+<!-- INFO queryParameters: #2
+-oc.form=dec
+-nav=cat:J/A+A/646/A77&amp;tab:{J/A+A/646/A77/catalog}&amp;key:source=J/A+A/646/A77&amp;HTTPPRM:&amp;&amp;-ref=VIZ6311fcc03eca66&amp;-oc.form=sexa&amp;-c.r=  2&amp;-c.geom=r&amp;-order=I&amp;-out=Star&amp;-out=Nobs&amp;-out=Nnights&amp;-out=Tspan&amp;-out=snr-med&amp;-out=DateStart&amp;-out=Vmag&amp;-out=B-V&amp;-out=plx&amp;-out=d&amp;-out=Nplt&amp;-out=SpType&amp;-out=Teff&amp;-out=logg&amp;-out=[Fe/H]&amp;-out=Mass&amp;-out=Radius&amp;-out=Age&amp;-out=SMWmed&amp;-out=logRHKmed&amp;-out=R5med&amp;-out=Simbad&amp;-ignore=Simbad=*&amp;Simbad=Simbad&amp;-out=_RA&amp;-out=_DE&amp;-file=-c&amp;-meta.ucd=2&amp;-meta=1&amp;-meta.foot=1&amp;-usenav=1&amp;-bmark=POST&amp;-out.max=50&amp;-out.form=HTML Table&amp;-c.eq=J2000&amp;-c.u=arcmin&amp;
+-out.add=_1
+-c.r=1
+-c.geom=r
+-source=J/A+A/646/A77/catalog
+-order=I
+-out=Star
+-out=Vmag
+-out=e_Vmag
+-out=B-V
+-out=e_B-V
+-out=plx
+-out=d
+-out=Nplt
+-out=SpType
+-out=Teff
+-out=e_Teff
+-out=logg
+-out=e_logg
+-out=[Fe/H]
+-out=e_[Fe/H]
+-out=Mass
+-out=e_Mass
+-out=Radius
+-out=e_Radius
+-out=Age
+-out=e_Age
+-out=SMWmed
+-out=e_SMW
+-out=logRHKmed
+-out=e_logRHK
+-out=_RA
+-out=_DE
+-out.max=unlimited
+-c.eq=J2000
+-c.u=arcmin
+-c=HIP
+ -->
+
+
+<!-- INFO queryParameters: #3
+-oc.form=dec
+-nav=cat:J/A+A/646/A77&amp;tab:{J/A+A/646/A77/catalog}&amp;key:source=J/A+A/646/A77&amp;HTTPPRM:&amp;&amp;-ref=VIZ6311fcc03eca66&amp;-oc.form=sexa&amp;-c.r=  2&amp;-c.geom=r&amp;-order=I&amp;-out=Star&amp;-out=Nobs&amp;-out=Nnights&amp;-out=Tspan&amp;-out=snr-med&amp;-out=DateStart&amp;-out=Vmag&amp;-out=B-V&amp;-out=plx&amp;-out=d&amp;-out=Nplt&amp;-out=SpType&amp;-out=Teff&amp;-out=logg&amp;-out=[Fe/H]&amp;-out=Mass&amp;-out=Radius&amp;-out=Age&amp;-out=SMWmed&amp;-out=logRHKmed&amp;-out=R5med&amp;-out=Simbad&amp;-ignore=Simbad=*&amp;Simbad=Simbad&amp;-out=_RA&amp;-out=_DE&amp;-file=-c&amp;-meta.ucd=2&amp;-meta=1&amp;-meta.foot=1&amp;-usenav=1&amp;-bmark=POST&amp;-out.max=50&amp;-out.form=HTML Table&amp;-c.eq=J2000&amp;-c.u=arcmin&amp;
+-out.add=_1
+-c.r=1
+-c.geom=r
++source=J/A+A/646/A77/catalog
+-order=I
+-out=Star
+-out=Vmag
+-out=e_Vmag
+-out=B-V
+-out=e_B-V
+-out=plx
+-out=d
+-out=Nplt
+-out=SpType
+-out=Teff
+-out=e_Teff
+-out=logg
+-out=e_logg
+-out=[Fe/H]
+-out=e_[Fe/H]
+-out=Mass
+-out=e_Mass
+-out=Radius
+-out=e_Radius
+-out=Age
+-out=e_Age
+-out=SMWmed
+-out=e_SMW
+-out=logRHKmed
+-out=e_logRHK
+-out=_RA
+-out=_DE
+-out.max=unlimited
+-c.eq=J2000
+-c.u=arcmin
+-c=HIP10175
+ -->
+
+<RESOURCE ID="yCat_36460077" name="J/A+A/646/A77">
+  <DESCRIPTION>Chromospheric activity from AMBRE-HARPS (Gomes da Silva+, 2021)</DESCRIPTION>
+  <COOSYS ID="J2000_2000.000" system="eq_FK5" equinox="J2000" epoch="2000.000"/>
+  <TABLE ID="J_A_A_646_A77_catalog" name="J/A+A/646/A77/catalog">
+    <DESCRIPTION>Catalogue data</DESCRIPTION>
+    <!-- Definitions of GROUPs and FIELDs -->
+
+<!-- +++No column could be found to attach a LINK in table: J/A+A/646/A77/catalog -->
+    <FIELD name="_1" ucd="meta.id" datatype="char" arraysize="40"><!-- ucd="ID_TARGET" -->
+      <DESCRIPTION>The original question (from your input file)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Star" ucd="meta.id;meta.main" datatype="char" arraysize="23*"><!-- ucd="ID_MAIN" -->
+      <DESCRIPTION>Stellar main identification in SIMBAD</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Vmag" ucd="phot.mag;em.opt.V" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="PHOT_MAG_V" -->
+      <DESCRIPTION>? Apparent V-band magnitude (dereddened)</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="e_Vmag" ucd="stat.error;phot.mag" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="ERROR" -->
+      <DESCRIPTION>? Apparent V-band magnitude uncertainty</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="B-V" ucd="phot.color;em.opt.B;em.opt.V" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="PHOT_CI_B-V" -->
+      <DESCRIPTION>? B-V colour (dereddened)</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="e_B-V" ucd="stat.error;phot.color;em.opt.B" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="ERROR" -->
+      <DESCRIPTION>? B-V colour uncertainty</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="plx" ucd="pos.parallax.trig" datatype="float" width="7" precision="3" unit="arcsec"><!-- ucd="POS_PARLX_TRIG" -->
+      <DESCRIPTION>? Parallax</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="d" ucd="pos.distance" datatype="float" width="7" precision="2" unit="pc"><!-- ucd="PHYS_DISTANCE_TRUE" -->
+      <DESCRIPTION>? Geometric distance</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="Nplt" ucd="meta.number" datatype="unsignedByte" width="1"><!-- ucd="NUMBER" -->
+      <DESCRIPTION>? Number of planets in system (as of 2019-12-12) [NULL integer written as an empty string]</DESCRIPTION>
+      <VALUES null="255" />
+    </FIELD>
+    <FIELD name="SpType" ucd="src.spType" datatype="char" arraysize="2"><!-- ucd="SPECT_TYPE_MK" -->
+      <DESCRIPTION>Spectral type</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Teff" ucd="phys.temperature.effective" datatype="short" width="4" unit="K"><!-- ucd="PHYS_TEMP_EFFEC" -->
+      <DESCRIPTION>? Effective temperature [NULL integer written as an empty string]</DESCRIPTION>
+      <VALUES null="-32768" />
+    </FIELD>
+    <FIELD name="e_Teff" ucd="stat.error;phys.temperature.effective" datatype="float" width="5" precision="1" unit="K"><!-- ucd="ERROR" -->
+      <DESCRIPTION>? Effective temperature uncertainty</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="logg" ucd="phys.gravity" datatype="float" width="5" precision="2" unit="log(cm.s**-2)"><!-- ucd="PHYS_GRAVITY_SURFACE" -->
+      <DESCRIPTION>? Logarithm of surface gravity</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="e_logg" ucd="stat.error" datatype="float" width="5" precision="2" unit="log(cm.s**-2)"><!-- ucd="ERROR" -->
+      <DESCRIPTION>? Logarithm of surface gravity uncertainty</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="[Fe/H]" ucd="phys.abund.Z" datatype="float" width="5" precision="2" unit="log(Sun)"><!-- ucd="PHYS_ABUND_FE/H" -->
+      <DESCRIPTION>? Metallicity</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="e_[Fe/H]" ucd="stat.error;phys.abund.Fe" datatype="float" width="5" precision="2" unit="log(Sun)"><!-- ucd="ERROR" -->
+      <DESCRIPTION>? Metallicity uncertainty</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="Mass" ucd="phys.mass" datatype="float" width="6" precision="3" unit="solMass"><!-- ucd="PHYS_MASS_MISC" -->
+      <DESCRIPTION>? Mass</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="e_Mass" ucd="stat.error;phys.mass" datatype="float" width="6" precision="3" unit="solMass"><!-- ucd="ERROR" -->
+      <DESCRIPTION>? Mass uncertainty</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="Radius" ucd="phys.angSize;src" datatype="float" width="6" precision="3" unit="solRad"><!-- ucd="EXTENSION_RAD" -->
+      <DESCRIPTION>? Radius</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="e_Radius" ucd="stat.error;phys.size.radius" datatype="float" width="6" precision="3" unit="solRad"><!-- ucd="ERROR" -->
+      <DESCRIPTION>? Radius uncertainty</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="Age" ucd="time.age" datatype="float" width="6" precision="3" unit="Gyr"><!-- ucd="TIME_AGE" -->
+      <DESCRIPTION>? Age</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="e_Age" ucd="stat.error;time.age" datatype="float" width="6" precision="3" unit="Gyr"><!-- ucd="ERROR" -->
+      <DESCRIPTION>? Age uncertainty</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="SMWmed" ucd="spect.index" datatype="float" width="7" precision="4"><!-- ucd="SPECT_INDEX_MISC" -->
+      <DESCRIPTION>Median S-index in Mt. Wilson scale</DESCRIPTION>
+    </FIELD>
+    <FIELD name="e_SMW" ucd="stat.error" datatype="float" width="7" precision="4"><!-- ucd="ERROR" -->
+      <DESCRIPTION>Uncertainty of S-index in Mt. Wilson scale</DESCRIPTION>
+    </FIELD>
+    <FIELD name="logRHKmed" ucd="phot.flux;arith.ratio" datatype="float" width="7" precision="4"><!-- ucd="PHOT_FLUX_RATIO" -->
+      <DESCRIPTION>? Median log R'_HK_ index</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="e_logRHK" ucd="stat.error" datatype="float" width="7" precision="4"><!-- ucd="ERROR" -->
+      <DESCRIPTION>? Uncertanty on log R'_HK_ index</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="_RA" ucd="pos.eq.ra;meta.main" ref="J2000_2000.000" datatype="double" width="9" precision="5" unit="deg"><!-- ucd="POS_EQ_RA_MAIN" -->
+      <DESCRIPTION>Right Ascension (J2000) from SIMBAD (not part of the original data)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="_DE" ucd="pos.eq.dec;meta.main" ref="J2000_2000.000" datatype="double" width="9" precision="5" unit="deg"><!-- ucd="POS_EQ_DEC_MAIN" -->
+      <DESCRIPTION>Declination (J2000) from SIMBAD (not part of the original data)</DESCRIPTION>
+    </FIELD>
+<DATA><TABLEDATA>
+<TR><TD>HIP10175</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP101905</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP102040</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP102152</TD><TD>HD 197027</TD><TD>9.155</TD><TD>0.010</TD><TD>0.642</TD><TD>0.030</TD><TD>12.754</TD><TD>78.41</TD><TD>0</TD><TD>G4</TD><TD>5694</TD><TD>28.0</TD><TD>4.09</TD><TD>0.04</TD><TD>0.07</TD><TD>0.02</TD><TD>0.982</TD><TD>0.016</TD><TD>1.085</TD><TD>0.021</TD><TD>7.767</TD><TD>1.799</TD><TD>0.1611</TD><TD>0.0011</TD><TD>-5.0018</TD><TD>0.0067</TD><TD>310.47764</TD><TD>-27.21595</TD></TR>
+
+<TR><TD>HIP10303</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP103983</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP104045</TD><TD>HD 200633</TD><TD>8.339</TD><TD>0.010</TD><TD>0.639</TD><TD>0.004</TD><TD>18.619</TD><TD>53.71</TD><TD>0</TD><TD>G1</TD><TD>5853</TD><TD>22.0</TD><TD>4.33</TD><TD>0.03</TD><TD>0.05</TD><TD>0.02</TD><TD>1.053</TD><TD>0.017</TD><TD>1.005</TD><TD>0.015</TD><TD>2.554</TD><TD>1.148</TD><TD>0.1620</TD><TD>0.0009</TD><TD>-4.9937</TD><TD>0.0057</TD><TD>316.18395</TD><TD>-04.82890</TD></TR>
+
+<TR><TD>HIP105184</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP108158</TD><TD>HD 207700</TD><TD>7.414</TD><TD>0.010</TD><TD>0.690</TD><TD>0.005</TD><TD>26.024</TD><TD>38.43</TD><TD>0</TD><TD>G5</TD><TD>5666</TD><TD>18.0</TD><TD>4.19</TD><TD>0.03</TD><TD>0.04</TD><TD>0.01</TD><TD>0.964</TD><TD>0.012</TD><TD>1.202</TD><TD>0.004</TD><TD>10.274</TD><TD>2.545</TD><TD>0.1652</TD><TD>0.0007</TD><TD>-5.0087</TD><TD>0.0043</TD><TD>328.68835</TD><TD>-73.43848</TD></TR>
+
+<TR><TD>HIP108468</TD><TD>HD 208704</TD><TD>7.173</TD><TD>0.010</TD><TD>0.645</TD><TD>0.009</TD><TD>29.052</TD><TD>34.42</TD><TD>0</TD><TD>G1</TD><TD>5826</TD><TD>11.0</TD><TD>4.21</TD><TD>0.01</TD><TD>-0.09</TD><TD>0.01</TD><TD>0.966</TD><TD>0.012</TD><TD>1.129</TD><TD>0.025</TD><TD>8.379</TD><TD>1.706</TD><TD>0.1713</TD><TD>0.0007</TD><TD>-4.9441</TD><TD>0.0037</TD><TD>329.60136</TD><TD>-12.66466</TD></TR>
+
+<TR><TD>HIP109110</TD><TD>NT Aqr</TD><TD>7.563</TD><TD>0.010</TD><TD>0.671</TD><TD>0.015</TD><TD>27.450</TD><TD>36.43</TD><TD>0</TD><TD>G1</TD><TD>5826</TD><TD>36.0</TD><TD>4.28</TD><TD>0.06</TD><TD>0.16</TD><TD>0.03</TD><TD>1.086</TD><TD>0.019</TD><TD>1.001</TD><TD>0.006</TD><TD>0.914</TD><TD>0.862</TD><TD>0.3687</TD><TD>0.0012</TD><TD>-4.4245</TD><TD>0.0019</TD><TD>331.52209</TD><TD>-05.35816</TD></TR>
+
+<TR><TD>HIP109821</TD><TD>HD 210918</TD><TD>6.232</TD><TD>0.010</TD><TD>0.649</TD><TD>0.006</TD><TD>45.350</TD><TD>22.05</TD><TD>0</TD><TD>G2</TD><TD>5755</TD><TD>12.0</TD><TD>4.21</TD><TD>0.02</TD><TD>-0.09</TD><TD>0.01</TD><TD>0.938</TD><TD>0.010</TD><TD>1.147</TD><TD>0.008</TD><TD>10.106</TD><TD>1.866</TD><TD>0.1604</TD><TD>0.0006</TD><TD>-5.0118</TD><TD>0.0037</TD><TD>333.66106</TD><TD>-41.38166</TD></TR>
+
+<TR><TD>HIP114328</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP114615</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP115577</TD><TD>HD 220507</TD><TD>7.575</TD><TD>0.010</TD><TD>0.687</TD><TD>0.001</TD><TD>23.077</TD><TD>43.33</TD><TD>0</TD><TD>G4</TD><TD>5698</TD><TD>17.0</TD><TD>4.17</TD><TD>0.03</TD><TD>0.01</TD><TD>0.01</TD><TD>0.973</TD><TD>0.010</TD><TD>1.246</TD><TD>0.024</TD><TD>10.330</TD><TD>1.739</TD><TD>0.1542</TD><TD>0.0007</TD><TD>-5.0751</TD><TD>0.0049</TD><TD>351.17548</TD><TD>-52.70188</TD></TR>
+
+<TR><TD>HIP116906</TD><TD>HD 222582</TD><TD>7.660</TD><TD>0.010</TD><TD>0.641</TD><TD>0.002</TD><TD>23.691</TD><TD>42.21</TD><TD>1</TD><TD>G2</TD><TD>5779</TD><TD>16.0</TD><TD>4.22</TD><TD>0.03</TD><TD>-0.01</TD><TD>0.01</TD><TD>0.983</TD><TD>0.010</TD><TD>1.124</TD><TD>0.026</TD><TD>8.085</TD><TD>1.480</TD><TD>0.1631</TD><TD>0.0007</TD><TD>-4.9887</TD><TD>0.0042</TD><TD>355.46471</TD><TD>-05.98576</TD></TR>
+
+<TR><TD>HIP117367</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP118115</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP11915</TD><TD>HD 16008</TD><TD>8.606</TD><TD>0.010</TD><TD>0.644</TD><TD>0.003</TD><TD>18.522</TD><TD>53.99</TD><TD>0</TD><TD>G2</TD><TD>5770</TD><TD>14.0</TD><TD>4.33</TD><TD>0.03</TD><TD>-0.06</TD><TD>0.01</TD><TD>0.986</TD><TD>0.013</TD><TD>0.933</TD><TD>0.021</TD><TD>3.017</TD><TD>0.836</TD><TD>0.1924</TD><TD>0.0011</TD><TD>-4.8410</TD><TD>0.0049</TD><TD>038.45428</TD><TD>-19.61181</TD></TR>
+
+<TR><TD>HIP14501</TD><TD>HD 19467</TD><TD>6.983</TD><TD>0.010</TD><TD>0.650</TD><TD>0.010</TD><TD>31.225</TD><TD>32.03</TD><TD>0</TD><TD>G3</TD><TD>5720</TD><TD>10.0</TD><TD>4.18</TD><TD>0.01</TD><TD>-0.14</TD><TD>0.01</TD><TD>0.911</TD><TD>0.007</TD><TD>1.202</TD><TD>0.000</TD><TD>11.882</TD><TD>2.564</TD><TD>0.1610</TD><TD>0.0006</TD><TD>-5.0089</TD><TD>0.0040</TD><TD>046.82740</TD><TD>-13.76178</TD></TR>
+
+<TR><TD>HIP14614</TD><TD>HD 19518</TD><TD>7.789</TD><TD>0.010</TD><TD>0.620</TD><TD>0.015</TD><TD>25.030</TD><TD>39.95</TD><TD>0</TD><TD>G2</TD><TD>5765</TD><TD>19.0</TD><TD>4.25</TD><TD>0.03</TD><TD>-0.07</TD><TD>0.02</TD><TD>0.957</TD><TD>0.013</TD><TD>1.001</TD><TD>0.008</TD><TD>6.874</TD><TD>1.237</TD><TD>0.1798</TD><TD>0.0008</TD><TD>-4.8785</TD><TD>0.0041</TD><TD>047.18461</TD><TD>+15.33483</TD></TR>
+
+<TR><TD>HIP15527</TD><TD>HD 20782</TD><TD>7.358</TD><TD>0.010</TD><TD>0.629</TD><TD>0.006</TD><TD>27.759</TD><TD>36.02</TD><TD>1</TD><TD>G2</TD><TD>5774</TD><TD>14.0</TD><TD>4.22</TD><TD>0.01</TD><TD>-0.06</TD><TD>0.01</TD><TD>0.957</TD><TD>0.009</TD><TD>1.096</TD><TD>0.000</TD><TD>8.740</TD><TD>1.460</TD><TD>0.1759</TD><TD>0.0007</TD><TD>-4.9066</TD><TD>0.0036</TD><TD>050.01491</TD><TD>-28.85407</TD></TR>
+
+<TR><TD>HIP18844</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP1954</TD><TD>HD 2071</TD><TD>7.269</TD><TD>0.010</TD><TD>0.680</TD><TD>0.007</TD><TD>35.271</TD><TD>28.35</TD><TD>0</TD><TD>G3</TD><TD>5719</TD><TD>14.0</TD><TD>4.35</TD><TD>0.02</TD><TD>-0.09</TD><TD>0.01</TD><TD>0.948</TD><TD>0.012</TD><TD>0.917</TD><TD>0.014</TD><TD>4.772</TD><TD>1.157</TD><TD>0.1808</TD><TD>0.0007</TD><TD>-4.9208</TD><TD>0.0036</TD><TD>006.17729</TD><TD>-53.98400</TD></TR>
+
+<TR><TD>HIP19911</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP22263</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP25670</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP28066</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP29432</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP29525</TD><TD>HD 42807</TD><TD>6.210</TD><TD>0.010</TD><TD>0.584</TD><TD>0.005</TD><TD>53.634</TD><TD>18.64</TD><TD>0</TD><TD>G3</TD><TD>5735</TD><TD>30.0</TD><TD>4.33</TD><TD>0.06</TD><TD>0.05</TD><TD>0.02</TD><TD>1.010</TD><TD>0.022</TD><TD>0.985</TD><TD>0.021</TD><TD>3.682</TD><TD>1.681</TD><TD>0.3411</TD><TD>0.0018</TD><TD>-4.3901</TD><TD>0.0032</TD><TD>093.30209</TD><TD>+10.62714</TD></TR>
+
+<TR><TD>HIP30037</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP30158</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP30476</TD><TD>HD 45289</TD><TD>6.669</TD><TD>0.010</TD><TD>0.673</TD><TD>0.004</TD><TD>35.875</TD><TD>27.87</TD><TD>0</TD><TD>G3</TD><TD>5717</TD><TD>18.0</TD><TD>4.20</TD><TD>0.01</TD><TD>-0.02</TD><TD>0.01</TD><TD>0.957</TD><TD>0.009</TD><TD>1.202</TD><TD>0.003</TD><TD>10.146</TD><TD>2.238</TD><TD>0.1575</TD><TD>0.0006</TD><TD>-5.0463</TD><TD>0.0040</TD><TD>096.10146</TD><TD>-42.84752</TD></TR>
+
+<TR><TD>HIP30502</TD><TD>HD 45346</TD><TD>8.653</TD><TD>0.010</TD><TD>0.658</TD><TD>0.016</TD><TD>17.155</TD><TD>58.29</TD><TD>0</TD><TD>G3</TD><TD>5733</TD><TD>26.0</TD><TD>4.18</TD><TD>0.06</TD><TD>0.02</TD><TD>0.02</TD><TD>0.991</TD><TD>0.018</TD><TD>1.000</TD><TD>0.008</TD><TD>5.176</TD><TD>1.370</TD><TD>0.1656</TD><TD>0.0009</TD><TD>-4.9868</TD><TD>0.0055</TD><TD>096.18233</TD><TD>-43.40567</TD></TR>
+
+<TR><TD>HIP3203</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP33094</TD><TD>HD 50806</TD><TD>6.059</TD><TD>0.010</TD><TD>0.711</TD><TD>0.005</TD><TD>38.719</TD><TD>25.83</TD><TD>0</TD><TD>G5</TD><TD>5633</TD><TD>15.0</TD><TD>4.02</TD><TD>0.03</TD><TD>0.03</TD><TD>0.01</TD><TD>1.024</TD><TD>0.013</TD><TD>1.514</TD><TD>0.000</TD><TD>9.532</TD><TD>2.724</TD><TD>0.1491</TD><TD>0.0006</TD><TD>-5.1480</TD><TD>0.0043</TD><TD>103.39143</TD><TD>-28.53979</TD></TR>
+
+<TR><TD>HIP34511</TD><TD>HD 54351</TD><TD>7.934</TD><TD>0.010</TD><TD>0.607</TD><TD>0.011</TD><TD>23.233</TD><TD>43.04</TD><TD>0</TD><TD>G1</TD><TD>5864</TD><TD>50.0</TD><TD>4.26</TD><TD>0.07</TD><TD>0.06</TD><TD>0.04</TD><TD>1.057</TD><TD>0.025</TD><TD>0.985</TD><TD>0.022</TD><TD>1.290</TD><TD>1.270</TD><TD>0.1692</TD><TD>0.0008</TD><TD>-4.9237</TD><TD>0.0048</TD><TD>107.27065</TD><TD>+15.42159</TD></TR>
+
+<TR><TD>HIP36512</TD><TD>HD 59711</TD><TD>7.729</TD><TD>0.010</TD><TD>0.637</TD><TD>0.011</TD><TD>27.594</TD><TD>36.24</TD><TD>0</TD><TD>G3</TD><TD>5722</TD><TD>13.0</TD><TD>4.33</TD><TD>0.02</TD><TD>-0.12</TD><TD>0.01</TD><TD>0.925</TD><TD>0.011</TD><TD>0.955</TD><TD>0.000</TD><TD>7.092</TD><TD>1.266</TD><TD>0.1726</TD><TD>0.0008</TD><TD>-4.9303</TD><TD>0.0041</TD><TD>112.66672</TD><TD>-15.99458</TD></TR>
+
+<TR><TD>HIP36515</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP38072</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP40133</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP41317</TD><TD>HD 71334</TD><TD>7.811</TD><TD>0.010</TD><TD>0.643</TD><TD>0.027</TD><TD>25.463</TD><TD>39.27</TD><TD>0</TD><TD>G4</TD><TD>5694</TD><TD>13.0</TD><TD>4.26</TD><TD>0.03</TD><TD>-0.09</TD><TD>0.01</TD><TD>0.916</TD><TD>0.010</TD><TD>1.000</TD><TD>0.003</TD><TD>9.164</TD><TD>1.559</TD><TD>0.1641</TD><TD>0.0007</TD><TD>-4.9848</TD><TD>0.0045</TD><TD>126.45632</TD><TD>-29.93059</TD></TR>
+
+<TR><TD>HIP42333</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP43297</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP44713</TD><TD>HD 78429</TD><TD>7.307</TD><TD>0.010</TD><TD>0.663</TD><TD>0.004</TD><TD>26.144</TD><TD>38.25</TD><TD>0</TD><TD>G2</TD><TD>5760</TD><TD>19.0</TD><TD>4.19</TD><TD>0.02</TD><TD>0.09</TD><TD>0.01</TD><TD>1.024</TD><TD>0.010</TD><TD>1.202</TD><TD>0.002</TD><TD>7.671</TD><TD>1.662</TD><TD>0.1723</TD><TD>0.0007</TD><TD>-4.9524</TD><TD>0.0037</TD><TD>136.66180</TD><TD>-43.49198</TD></TR>
+
+<TR><TD>HIP44935</TD><TD>HD 78534</TD><TD>8.600</TD><TD>0.010</TD><TD>0.621</TD><TD>0.022</TD><TD>15.144</TD><TD>66.03</TD><TD>0</TD><TD>G2</TD><TD>5754</TD><TD>38.0</TD><TD>4.05</TD><TD>0.08</TD><TD>0.19</TD><TD>0.03</TD><TD>1.058</TD><TD>0.020</TD><TD>1.145</TD><TD>0.021</TD><TD>5.689</TD><TD>1.487</TD><TD>0.1609</TD><TD>0.0010</TD><TD>-4.9859</TD><TD>0.0062</TD><TD>137.29320</TD><TD>+10.82170</TD></TR>
+
+<TR><TD>HIP44997</TD><TD>HD 78660</TD><TD>8.318</TD><TD>0.010</TD><TD>0.657</TD><TD>0.013</TD><TD>20.633</TD><TD>48.47</TD><TD>0</TD><TD>G2</TD><TD>5752</TD><TD>16.0</TD><TD>4.31</TD><TD>0.04</TD><TD>0.05</TD><TD>0.01</TD><TD>1.024</TD><TD>0.013</TD><TD>0.955</TD><TD>0.003</TD><TD>2.379</TD><TD>0.943</TD><TD>0.1729</TD><TD>0.0009</TD><TD>-4.9446</TD><TD>0.0049</TD><TD>137.47441</TD><TD>+14.45676</TD></TR>
+
+<TR><TD>HIP4909</TD><TD>HD 6204</TD><TD>8.503</TD><TD>0.010</TD><TD>0.643</TD><TD>0.024</TD><TD>18.775</TD><TD>53.26</TD><TD>0</TD><TD>G1</TD><TD>5881</TD><TD>32.0</TD><TD>4.28</TD><TD>0.05</TD><TD>0.14</TD><TD>0.02</TD><TD>1.071</TD><TD>0.005</TD><TD>0.955</TD><TD>0.000</TD><TD>0.234</TD><TD>0.161</TD><TD>0.2977</TD><TD>0.0014</TD><TD>-4.5274</TD><TD>0.0029</TD><TD>015.73925</TD><TD>-09.86124</TD></TR>
+
+<TR><TD>HIP49756</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP5301</TD><TD>HD 6718</TD><TD>8.444</TD><TD>0.010</TD><TD>0.660</TD><TD>0.009</TD><TD>19.448</TD><TD>51.42</TD><TD>1</TD><TD>G3</TD><TD>5723</TD><TD>15.0</TD><TD>4.31</TD><TD>0.02</TD><TD>-0.07</TD><TD>0.01</TD><TD>0.946</TD><TD>0.011</TD><TD>0.971</TD><TD>0.021</TD><TD>6.632</TD><TD>1.208</TD><TD>0.1675</TD><TD>0.0013</TD><TD>-4.9767</TD><TD>0.0075</TD><TD>016.95276</TD><TD>-08.23370</TD></TR>
+
+<TR><TD>HIP54102</TD><TD>HD 96116</TD><TD>8.636</TD><TD>0.010</TD><TD>0.654</TD><TD>0.018</TD><TD>17.352</TD><TD>57.63</TD><TD>0</TD><TD>G1</TD><TD>5832</TD><TD>21.0</TD><TD>4.35</TD><TD>0.03</TD><TD>-0.01</TD><TD>0.02</TD><TD>1.034</TD><TD>0.018</TD><TD>0.955</TD><TD>0.003</TD><TD>1.547</TD><TD>1.102</TD><TD>0.2361</TD><TD>0.0013</TD><TD>-4.6920</TD><TD>0.0040</TD><TD>166.05688</TD><TD>-57.76513</TD></TR>
+
+<TR><TD>HIP54287</TD><TD>HD 96423</TD><TD>7.228</TD><TD>0.010</TD><TD>0.679</TD><TD>0.002</TD><TD>30.958</TD><TD>32.30</TD><TD>0</TD><TD>G3</TD><TD>5711</TD><TD>18.0</TD><TD>4.23</TD><TD>0.02</TD><TD>0.10</TD><TD>0.01</TD><TD>1.003</TD><TD>0.010</TD><TD>1.079</TD><TD>0.024</TD><TD>6.688</TD><TD>1.214</TD><TD>0.1577</TD><TD>0.0007</TD><TD>-5.0481</TD><TD>0.0042</TD><TD>166.58227</TD><TD>-44.37332</TD></TR>
+
+<TR><TD>HIP54582</TD><TD>HD 97037</TD><TD>6.789</TD><TD>0.010</TD><TD>0.606</TD><TD>0.002</TD><TD>30.823</TD><TD>32.44</TD><TD>0</TD><TD>G1</TD><TD>5883</TD><TD>14.0</TD><TD>4.15</TD><TD>0.02</TD><TD>-0.07</TD><TD>0.01</TD><TD>1.003</TD><TD>0.009</TD><TD>1.247</TD><TD>0.023</TD><TD>7.931</TD><TD>1.593</TD><TD>0.1595</TD><TD>0.0006</TD><TD>-4.9806</TD><TD>0.0039</TD><TD>167.55560</TD><TD>-07.38940</TD></TR>
+
+<TR><TD>HIP55409</TD><TD>HD 98649</TD><TD>7.985</TD><TD>0.010</TD><TD>0.653</TD><TD>0.003</TD><TD>23.683</TD><TD>42.22</TD><TD>1</TD><TD>G3</TD><TD>5714</TD><TD>22.0</TD><TD>4.25</TD><TD>0.05</TD><TD>-0.03</TD><TD>0.02</TD><TD>0.959</TD><TD>0.017</TD><TD>0.998</TD><TD>0.009</TD><TD>6.579</TD><TD>1.546</TD><TD>0.1666</TD><TD>0.0006</TD><TD>-4.9765</TD><TD>0.0036</TD><TD>170.21570</TD><TD>-23.21734</TD></TR>
+
+<TR><TD>HIP62039</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP6407</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP64150</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP64673</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP64713</TD><TD>HD 115169</TD><TD>9.254</TD><TD>0.010</TD><TD>0.662</TD><TD>0.029</TD><TD>12.929</TD><TD>77.35</TD><TD>0</TD><TD>G2</TD><TD>5765</TD><TD>21.0</TD><TD>4.19</TD><TD>0.04</TD><TD>0.03</TD><TD>0.02</TD><TD>1.009</TD><TD>0.015</TD><TD>0.997</TD><TD>0.011</TD><TD>4.066</TD><TD>1.112</TD><TD>0.1670</TD><TD>0.0011</TD><TD>-4.9811</TD><TD>0.0062</TD><TD>198.94745</TD><TD>-29.50588</TD></TR>
+
+<TR><TD>HIP65708</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP67620</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP68468</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP69645</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP72043</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP73241</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP73815</TD><TD>HD 133600</TD><TD>8.123</TD><TD>0.010</TD><TD>0.636</TD><TD>0.005</TD><TD>18.316</TD><TD>54.60</TD><TD>0</TD><TD>G2</TD><TD>5761</TD><TD>18.0</TD><TD>4.09</TD><TD>0.03</TD><TD>0.08</TD><TD>0.02</TD><TD>1.017</TD><TD>0.012</TD><TD>1.182</TD><TD>0.026</TD><TD>7.645</TD><TD>1.573</TD><TD>0.1619</TD><TD>0.0008</TD><TD>-4.9921</TD><TD>0.0052</TD><TD>226.30520</TD><TD>+06.28991</TD></TR>
+
+<TR><TD>HIP74389</TD><TD>HD 134664</TD><TD>7.653</TD><TD>0.010</TD><TD>0.624</TD><TD>0.012</TD><TD>24.485</TD><TD>40.84</TD><TD>0</TD><TD>G1</TD><TD>5865</TD><TD>19.0</TD><TD>4.34</TD><TD>0.02</TD><TD>0.10</TD><TD>0.01</TD><TD>1.072</TD><TD>0.012</TD><TD>1.047</TD><TD>0.003</TD><TD>2.907</TD><TD>0.966</TD><TD>0.1894</TD><TD>0.0007</TD><TD>-4.8363</TD><TD>0.0033</TD><TD>228.04314</TD><TD>-30.88629</TD></TR>
+
+<TR><TD>HIP74432</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP7585</TD><TD>HD 9986</TD><TD>6.763</TD><TD>0.010</TD><TD>0.646</TD><TD>0.008</TD><TD>39.272</TD><TD>25.46</TD><TD>0</TD><TD>G1</TD><TD>5830</TD><TD>25.0</TD><TD>4.24</TD><TD>0.03</TD><TD>0.18</TD><TD>0.02</TD><TD>1.100</TD><TD>0.016</TD><TD>1.000</TD><TD>0.004</TD><TD>0.703</TD><TD>0.626</TD><TD>0.1815</TD><TD>0.0007</TD><TD>-4.8922</TD><TD>0.0033</TD><TD>024.42033</TD><TD>+12.07838</TD></TR>
+
+<TR><TD>HIP76114</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP77052</TD><TD>psi Ser</TD><TD>5.862</TD><TD>0.010</TD><TD>0.685</TD><TD>0.002</TD><TD>67.706</TD><TD>14.77</TD><TD>0</TD><TD>G4</TD><TD>5688</TD><TD>16.0</TD><TD>4.30</TD><TD>0.03</TD><TD>0.07</TD><TD>0.01</TD><TD>1.015</TD><TD>0.014</TD><TD>0.932</TD><TD>0.021</TD><TD>1.746</TD><TD>1.045</TD><TD>0.2140</TD><TD>0.0006</TD><TD>-4.7885</TD><TD>0.0022</TD><TD>236.00758</TD><TD>+02.51517</TD></TR>
+
+<TR><TD>HIP77883</TD><TD>HD 142331</TD><TD>8.711</TD><TD>0.010</TD><TD>0.669</TD><TD>0.024</TD><TD>16.438</TD><TD>60.83</TD><TD>0</TD><TD>G2</TD><TD>5806</TD><TD>138.0</TD><TD>4.78</TD><TD>0.32</TD><TD>0.03</TD><TD>0.10</TD><TD>0.999</TD><TD>0.052</TD><TD>1.003</TD><TD>0.039</TD><TD>3.545</TD><TD>3.541</TD><TD>0.1664</TD><TD>0.0010</TD><TD>-4.9887</TD><TD>0.0060</TD><TD>238.58245</TD><TD>-08.58038</TD></TR>
+
+<TR><TD>HIP79578</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP79672</TD><TD>18 Sco</TD><TD>5.429</TD><TD>0.010</TD><TD>0.630</TD><TD>0.009</TD><TD>70.768</TD><TD>14.13</TD><TD>0</TD><TD>G2</TD><TD>5806</TD><TD>15.0</TD><TD>4.26</TD><TD>0.03</TD><TD>0.07</TD><TD>0.01</TD><TD>1.033</TD><TD>0.012</TD><TD>1.046</TD><TD>0.008</TD><TD>4.222</TD><TD>0.881</TD><TD>0.1707</TD><TD>0.0006</TD><TD>-4.9354</TD><TD>0.0032</TD><TD>243.90529</TD><TD>-08.36944</TD></TR>
+
+<TR><TD>HIP79715</TD><TD>HD 145927</TD><TD>8.342</TD><TD>0.010</TD><TD>0.650</TD><TD>0.019</TD><TD>17.523</TD><TD>57.07</TD><TD>0</TD><TD>G2</TD><TD>5819</TD><TD>16.0</TD><TD>4.25</TD><TD>0.02</TD><TD>-0.03</TD><TD>0.01</TD><TD>0.991</TD><TD>0.012</TD><TD>1.096</TD><TD>0.005</TD><TD>7.079</TD><TD>1.289</TD><TD>0.1643</TD><TD>0.0009</TD><TD>-4.9888</TD><TD>0.0057</TD><TD>244.02675</TD><TD>-52.81455</TD></TR>
+
+<TR><TD>HIP81746</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP83276</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP85042</TD><TD>HD 157347</TD><TD>6.252</TD><TD>0.010</TD><TD>0.670</TD><TD>0.001</TD><TD>50.859</TD><TD>19.66</TD><TD>0</TD><TD>G4</TD><TD>5676</TD><TD>16.0</TD><TD>4.27</TD><TD>0.03</TD><TD>0.02</TD><TD>0.01</TD><TD>0.959</TD><TD>0.010</TD><TD>1.047</TD><TD>0.002</TD><TD>8.241</TD><TD>1.644</TD><TD>0.1613</TD><TD>0.0006</TD><TD>-5.0204</TD><TD>0.0038</TD><TD>260.71370</TD><TD>-02.38818</TD></TR>
+
+<TR><TD>HIP8507</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP87769</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP89650</TD><TD>HD 167060</TD><TD>8.916</TD><TD>0.010</TD><TD>0.662</TD><TD>0.022</TD><TD>13.618</TD><TD>73.43</TD><TD>0</TD><TD>G1</TD><TD>5854</TD><TD>68.0</TD><TD>4.13</TD><TD>0.10</TD><TD>0.18</TD><TD>0.05</TD><TD>1.093</TD><TD>0.034</TD><TD>1.064</TD><TD>0.026</TD><TD>2.032</TD><TD>1.881</TD><TD>0.1620</TD><TD>0.0011</TD><TD>-5.0107</TD><TD>0.0068</TD><TD>274.43393</TD><TD>-61.70878</TD></TR>
+
+<TR><TD>HIP9349</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+
+<TR><TD>HIP95962</TD><TD>HD 183658</TD><TD>7.158</TD><TD>0.010</TD><TD>0.600</TD><TD>0.015</TD><TD>29.960</TD><TD>33.38</TD><TD>0</TD><TD>G2</TD><TD>5803</TD><TD>17.0</TD><TD>4.24</TD><TD>0.02</TD><TD>0.03</TD><TD>0.01</TD><TD>1.010</TD><TD>0.012</TD><TD>1.097</TD><TD>0.006</TD><TD>6.619</TD><TD>1.430</TD><TD>0.1650</TD><TD>0.0007</TD><TD>-4.9410</TD><TD>0.0043</TD><TD>292.71966</TD><TD>-06.51442</TD></TR>
+</TABLEDATA></DATA>
+</TABLE>
+</RESOURCE>
+<INFO name="warning">1 lines skipped</INFO>
+
+<INFO name="Error" value="***No position from Sesame: HIP"/>
+<INFO name="Error" value="Target could not be resolved: geom=r"/>
+<INFO name="Warning" value="+++No column for LINK to a row in table: J/A+A/646/A77/catalog"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Error" value="No query associated to meta_xxx Handle #1"/>
+<INFO name="Warning" value="info param skipped"/>
+<INFO name="QUERY_STATUS" value="ERROR">
+***No position from Sesame: HIP
+Target could not be resolved: geom=r
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+No query associated to meta_xxx Handle #1
+</INFO>
+</VOTABLE>
